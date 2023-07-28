@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="section">
+            <button class="redBtn">RED</button>
+            <button class="greenBtn">GREEN</button>
+            <button class="yellowBtn">YELLOW</button>
+        </div>
+    </main>
+
+
+    <script>
+
+        let redButton = document.getElementsByClassName('redBtn')[0];
+        let greenButton = document.getElementsByClassName('greenBtn')[0];
+        let yellowButton = document.getElementsByClassName('yellowBtn')[0];
+
+        function redColor(){
+            redButton.style.background = "red";
+            greenButton.style.background = "red";
+            yellowButton.style.background = "red";
+        }
+
+        function greenColor(){
+            redButton.style.backgroundColor = "green";
+            greenButton.style.backgroundColor = "green";
+            yellowButton.style.backgroundColor = "green";
+        }
+
+        function yellowColor(){
+            redButton.style.backgroundColor = "yellow";
+            greenButton.style.backgroundColor = "yellow";
+            yellowButton.style.backgroundColor = "yellow";
+        }
+
+        redButton.addEventListener('click', () => {
+            redColor();
+        })
+
+        greenButton.addEventListener('click', () => {
+            greenColor();
+        })
+
+        yellowButton.addEventListener('click', () => {
+            yellowColor();
+        })
+
+
+    </script>
+
+</body>
+</html>

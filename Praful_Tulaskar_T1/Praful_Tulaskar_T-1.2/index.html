@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1.2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="section">
+            <button class="Btn1">BTN1</button>
+            <button class="Btn2">BTN2</button>
+            <button class="Btn3">BTN3</button>
+            <button class="rotateBtn">ROTATE</button>
+        </div>
+    </main>
+
+
+    <script>
+
+        let redButton = document.getElementsByClassName('Btn1')[0];
+        let greenButton = document.getElementsByClassName('Btn2')[0];
+        let yellowButton = document.getElementsByClassName('Btn3')[0];
+        let rotateButton = document.getElementsByClassName('rotateBtn')[0];
+
+        redButton.style.background = "red";
+        greenButton.style.background = "green";
+        yellowButton.style.background = "yellow";
+
+        
+        function rotate(){
+
+            let temp = redButton.style.background;
+            redButton.style.background = yellowButton.style.background;
+            yellowButton.style.background = greenButton.style.background;
+            greenButton.style.background = temp;
+            
+        }
+
+        function redColor(){
+            redButton.style.background = "red";
+        }
+
+        function greenColor(){
+            greenButton.style.backgroundColor = "green";
+        }
+
+        function yellowColor(){
+            yellowButton.style.backgroundColor = "yellow";
+        }
+
+
+
+
+        rotateButton.addEventListener('click', () => {
+            rotate();
+        })
+
+
+        redButton.addEventListener('click', () => {
+            redColor();
+        })
+
+        greenButton.addEventListener('click', () => {
+            greenColor();
+        })
+
+        yellowButton.addEventListener('click', () => {
+            yellowColor();
+        })
+
+
+    </script>
+
+</body>
+</html>

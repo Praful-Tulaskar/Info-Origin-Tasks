@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div{
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+main input{
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+}
+
+main .btn{
+    padding: 10px 20px;
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(66, 166, 206)
+}
+
+main .btn:hover{
+    background: rgba(94, 195, 241, 0.89);
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .section button{
+    width: 5rem;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+main .section .rotateBtn{
+    background: rgb(50, 162, 206);
+}
+
